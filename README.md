@@ -13,3 +13,7 @@ opening_files.py
 random_guessing.py
 test.py
 
+There have been new changes to the 'hello.py' file
+
+I will wait to merge this file to the master
+
