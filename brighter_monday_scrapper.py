@@ -26,12 +26,12 @@ for job in jobs:
     job_type_elements = job.find_all('span', class_='mb-3 px-3 py-1 rounded bg-brand-secondary-100 mr-2 text-loading-hide')
     job_type = job_type_elements[1].text.strip() if len(job_type_elements) >= 2 else "N/A"
 
-    # Extracting confidentiality
-    confidentiality_element = job.find('span', class_='mb-3 px-3 py-1 rounded bg-brand-secondary-100 mr-2 text-loading-hide')
-    confidentiality = confidentiality_element.text.strip() if confidentiality_element else "N/A"
+    # Extracting salary
+    salary_element = job.find('span', class_='mb-3 px-3 py-1 rounded bg-brand-secondary-100 mr-2 text-loading-hide')
+    salary = salary_element.text.strip() if salary_element else "N/A"
 
     # Append the job data to the jobs_data list as a tuple
-    jobs_data.append((title, company, location, job_type, confidentiality))
+    jobs_data.append((title, company, location, job_type, salary))
 
 
 # Create a new workbook
